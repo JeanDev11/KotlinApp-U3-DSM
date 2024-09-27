@@ -27,10 +27,14 @@ val Cabin = FontFamily(
     Font(R.font.cabin_regular, FontWeight.Normal),
     Font(R.font.cabin_bold, FontWeight.Bold)
 )
-// Set of Material typography styles to start with
+
+val Sriracha = FontFamily(
+    Font(R.font.sriracha_regular, FontWeight.Normal),
+)
+
 val Typography = Typography(
     bodyLarge = TextStyle(
-        fontFamily = Cabin,
+        fontFamily = Sriracha,
         fontWeight = FontWeight.Normal,
         fontSize = 16.sp,
         lineHeight = 24.sp,
