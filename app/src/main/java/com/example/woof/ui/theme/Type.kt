@@ -23,34 +23,32 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
 import com.example.woof.R
 
-val AbrilFatface = FontFamily(
-    Font(R.font.abril_fatface_regular)
+val Cabin = FontFamily(
+    Font(R.font.cabin_regular, FontWeight.Normal),
+    Font(R.font.cabin_bold, FontWeight.Bold)
 )
-
-val Montserrat = FontFamily(
-    Font(R.font.montserrat_regular),
-    Font(R.font.montserrat_bold, FontWeight.Bold)
-)
-
+// Set of Material typography styles to start with
 val Typography = Typography(
-    displayLarge = TextStyle(
-        fontFamily = AbrilFatface,
+    bodyLarge = TextStyle(
+        fontFamily = Cabin,
         fontWeight = FontWeight.Normal,
-        fontSize = 36.sp
+        fontSize = 16.sp,
+        lineHeight = 24.sp,
+        letterSpacing = 0.5.sp
+    ),
+    displayLarge = TextStyle(
+        fontFamily = Cabin,
+        fontWeight = FontWeight.Normal,
+        fontSize = 30.sp
     ),
     displayMedium = TextStyle(
-        fontFamily = Montserrat,
+        fontFamily = Cabin,
         fontWeight = FontWeight.Bold,
         fontSize = 20.sp
     ),
-    labelSmall = TextStyle(
-        fontFamily = Montserrat,
+    displaySmall = TextStyle(
+        fontFamily = Cabin,
         fontWeight = FontWeight.Bold,
-        fontSize = 14.sp
-    ),
-    bodyLarge = TextStyle(
-        fontFamily = Montserrat,
-        fontWeight = FontWeight.Normal,
-        fontSize = 14.sp
+        fontSize = 20.sp
     )
 )
